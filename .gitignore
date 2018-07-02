@@ -2,7 +2,7 @@ target
 bin
 *.class
 .settings
-/financial-weizhan4.0-web/target/*
+/target/*
 */.settings/
 */.classpath
 .project
