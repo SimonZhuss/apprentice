@@ -1,0 +1,9 @@
+target
+bin
+*.class
+.settings
+/financial-weizhan4.0-web/target/*
+*/.settings/
+*/.classpath
+.project
+.idea
