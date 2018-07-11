@@ -31,6 +31,7 @@
 
         <mysql-connector-java.version>5.1.9</mysql-connector-java.version>
         <druid.version>1.0.26</druid.version>
+        <swagger.version>2.7.0</swagger.version>
     </properties>
     <dependencies>
 		 <dependency>
@@ -212,6 +213,11 @@
             <version>${hibernate.version}</version>
         </dependency>
         <dependency>
+    		<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-validator</artifactId>
+    		<version>5.2.4.Final</version>
+		</dependency>
+        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql-connector-java.version}</version>
@@ -310,6 +316,29 @@
             		<artifactId>persistence-api</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		
+		<dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>javax.el</artifactId>
+            <version>2.2.4</version>
+        </dependency>
+        
+        <!--swagger -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${swagger.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${swagger.version}</version>
 		</dependency>
     </dependencies>
     <build>

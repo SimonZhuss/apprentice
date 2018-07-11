@@ -5,18 +5,16 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
+@ApiModel
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
-@ApiModel
-public class UserQuery {
-	
+public class SwaggerQuery {
+
 	@ApiModelProperty(value="姓名")
-	private String name;
+    private String name;
 	
-	@ApiModelProperty(value="密码")
-	private String pwd;
+	@ApiModelProperty(value="地址")
+	private String address; 
 }
