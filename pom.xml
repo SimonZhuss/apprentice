@@ -32,6 +32,7 @@
         <mysql-connector-java.version>5.1.9</mysql-connector-java.version>
         <druid.version>1.0.26</druid.version>
         <swagger.version>2.7.0</swagger.version>
+        <sharding.jdbc.version>1.5.4</sharding.jdbc.version>
     </properties>
     <dependencies>
 		 <dependency>
@@ -339,6 +340,18 @@
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>${swagger.version}</version>
+		</dependency>
+		
+		<!-- sharding jdbc -->
+		<dependency>
+	    	<groupId>io.shardingsphere</groupId>
+	    	<artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+	    	<version>3.0.0.M1</version>
+		</dependency>
+		<dependency>
+	    	<groupId>io.shardingsphere</groupId>
+	    	<artifactId>sharding-jdbc-spring-namespace</artifactId>
+	    	<version>3.0.0.M1</version>
 		</dependency>
     </dependencies>
     <build>
